@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:paddingHorizontal="@dimen/message_margin_horizontal"
+    android:paddingVertical="@dimen/message_margin_vertical">
+
+    <!-- Timestamp (shown on the right for sent messages) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_tiny">
+
+        <TextView
+            android:id="@+id/textTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/timestamp_text_size"
+            android:textColor="@color/text_timestamp"
+            tools:text="14:30" />
+
+        <!-- Status indicator (read receipts) -->
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@color/text_timestamp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            tools:text="✓✓"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <!-- Message Bubble -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_maxWidth="@dimen/message_max_width"
+        android:background="@drawable/sent_message_background"
+        android:orientation="vertical"
+        android:padding="@dimen/message_padding_horizontal">
+
+        <!-- Message Content -->
+        <TextView
+            android:id="@+id/textMessageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_sent"
+            android:textSize="@dimen/text_size_regular"
+            android:lineSpacingExtra="2dp"
+            tools:text="Este es un mensaje enviado que aparece en una burbuja verde como en WhatsApp" />
+
+        <!-- Optional Reminder Info (shown if this is a reminder message) -->
+        <LinearLayout
+            android:id="@+id/layoutReminderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginEnd="@dimen/spacing_tiny" />
+
+            <TextView
+                android:id="@+id/textReminderTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/timestamp_text_size"
+                android:textColor="@color/text_secondary"
+                tools:text="Programado para 25/12/2024 15:30" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Spacer for read receipts -->
+    <View
+        android:layout_width="@dimen/spacing_small"
+        android:layout_height="1dp" />
+
+</LinearLayout>
