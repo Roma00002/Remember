@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- WhatsApp-inspired color scheme -->
+
+    <!-- Primary Colors -->
+    <color name="whatsapp_dark_green">#075E54</color>
+    <color name="whatsapp_light_green">#128C7E</color>
+    <color name="whatsapp_green_light">#25D366</color>
+    <color name="whatsapp_green_dark">#1DA851</color>
+
+    <!-- Material Design Primary -->
+    <color name="primary">#128C7E</color>
+    <color name="primary_dark">#075E54</color>
+    <color name="accent">#34B7F1</color>
+
+    <!-- Chat Interface Colors -->
+    <color name="chat_background">#E5DDD5</color>
+    <color name="chat_background_pattern">#F7F7F7</color>
+
+    <!-- Message Colors -->
+    <color name="message_sent">#DCF8C6</color>
+    <color name="message_sent_dark">#C3F09A</color>
+    <color name="message_received">#FFFFFF</color>
+    <color name="message_received_border">#E5E5E5</color>
+
+    <!-- Reminder Colors -->
+    <color name="reminder_background">#FFF3CD</color>
+    <color name="reminder_border">#FFC107</color>
+    <color name="reminder_text">#856404</color>
+
+    <!-- Input Area Colors -->
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_border">#E0E0E0</color>
+    <color name="input_hint">#999999</color>
+    <color name="input_text">#000000</color>
+
+    <!-- Button Colors -->
+    <color name="send_button">#128C7E</color>
+    <color name="send_button_pressed">#0D5C4F</color>
+    <color name="calendar_button">#34B7F1</color>
+    <color name="calendar_button_pressed">#2980B9</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_sent">#000000</color>
+    <color name="text_received">#000000</color>
+    <color name="text_timestamp">#666666</color>
+
+    <!-- Status and State Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Divider and Border Colors -->
+    <color name="divider">#E0E0E0</color>
+    <color name="border">#CCCCCC</color>
+    <color name="shadow">#20000000</color>
+
+    <!-- System Colors -->
+    <color name="status_bar">#075E54</color>
+    <color name="navigation_bar">#FFFFFF</color>
+
+    <!-- Overlay and Background Colors -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="dialog_background">#FFFFFF</color>
+
+    <!-- Ripple Colors -->
+    <color name="ripple_light">#1A000000</color>
+    <color name="ripple_dark">#33FFFFFF</color>
+
+    <!-- Material Design Default Colors (for fallback) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+</resources>
