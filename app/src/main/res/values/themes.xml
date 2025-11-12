@@ -1,0 +1,247 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.Remember" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/status_bar</item>
+
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/chat_background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/RememberButton</item>
+        <item name="materialButtonStyle">@style/RememberMaterialButton</item>
+
+        <!-- EditText styles -->
+        <item name="editTextStyle">@style/RememberEditText</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/RememberToolbar</item>
+
+        <!-- Card View -->
+        <item name="cardViewStyle">@style/RememberCardView</item>
+
+        <!-- Bottom Sheet -->
+        <item name="bottomSheetStyle">@style/RememberBottomSheet</item>
+
+        <!-- Alert Dialog -->
+        <item name="alertDialogTheme">@style/RememberAlertDialog</item>
+
+        <!-- Date Picker -->
+        <item name="materialDatePickerTheme">@style/RememberDatePicker</item>
+
+        <!-- Time Picker -->
+        <item name="materialTimePickerTheme">@style/RememberTimePicker</item>
+    </style>
+
+    <!-- NoActionBar theme for activities with custom toolbar -->
+    <style name="Theme.Remember.NoActionBar" parent="Theme.Remember">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- App Bar overlay theme -->
+    <style name="Theme.Remember.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Popup overlay theme -->
+    <style name="Theme.Remember.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Custom Button Styles -->
+    <style name="RememberButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+    </style>
+
+    <style name="RememberMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <!-- Send Button Style -->
+    <style name="SendButton" parent="RememberMaterialButton">
+        <item name="backgroundTint">@color/send_button</item>
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- Calendar Button Style -->
+    <style name="CalendarButton" parent="RememberMaterialButton">
+        <item name="backgroundTint">@color/calendar_button</item>
+        <item name="android:layout_width">@dimen/button_size</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="RememberEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/input_text</item>
+        <item name="android:textColorHint">@color/input_hint</item>
+        <item name="android:textSize">@dimen/input_text_size</item>
+        <item name="android:background">@drawable/input_background</item>
+        <item name="android:padding">@dimen/input_padding_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="RememberToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+    </style>
+
+    <!-- Card View Style -->
+    <style name="RememberCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+    </style>
+
+    <!-- Bottom Sheet Style -->
+    <style name="RememberBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Remember.BottomSheet</item>
+    </style>
+
+    <!-- Alert Dialog Style -->
+    <style name="RememberAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">@color/dialog_background</item>
+        <item name="alertDialogStyle">@style/RememberAlertDialogStyle</item>
+    </style>
+
+    <style name="RememberAlertDialogStyle" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.Remember.Dialog</item>
+    </style>
+
+    <!-- Date Picker Style -->
+    <style name="RememberDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Time Picker Style -->
+    <style name="RememberTimePicker" parent="ThemeOverlay.MaterialComponents.MaterialTimePicker">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Shape Appearances -->
+    <style name="ShapeAppearance.Remember.BottomSheet" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/dialog_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/dialog_corner_radius</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Reminder.MessageSent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/message_corner_radius</item>
+        <item name="cornerSizeTopRight">2dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Reminder.MessageReceived" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/message_corner_radius</item>
+        <item name="cornerSizeTopLeft">2dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Reminder.Dialog" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dialog_corner_radius</item>
+    </style>
+
+    <!-- Text Appearances -->
+    <style name="TextAppearance.Remember.Message" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Reminder.Timestamp" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/timestamp_text_size</item>
+        <item name="android:textColor">@color/text_timestamp</item>
+    </style>
+
+    <style name="TextAppearance.Reminder.Hint" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/text_size_regular</item>
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <!-- RecyclerView Styles -->
+    <style name="RememberRecyclerView" parent="">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@color/primary</item>
+        <item name="android:scrollbarSize">4dp</item>
+    </style>
+
+    <!-- Input Area Container Style -->
+    <style name="InputAreaContainer" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:padding">@dimen/input_area_padding</item>
+    </style>
+
+    <!-- Message Container Styles -->
+    <style name="MessageContainerSent" parent="">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginStart">@dimen/message_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/message_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/message_margin_vertical</item>
+    </style>
+
+    <style name="MessageContainerReceived" parent="">
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_marginStart">@dimen/message_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/message_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/message_margin_vertical</item>
+    </style>
+
+    <style name="MessageContainerReminder" parent="MessageContainerReceived">
+        <item name="android:background">@drawable/reminder_message_background</item>
+        <item name="android:padding">@dimen/message_padding_horizontal</item>
+    </style>
+</resources>
