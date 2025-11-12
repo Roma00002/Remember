@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_background"
+    tools:context=".ui.ChatFragment">
+
+    <!-- Chat Messages RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/spacing_small"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:stackFromEnd="true"
+        app:layout_constraintBottom_toTopOf="@+id/inputAreaContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/message_item_sent" />
+
+    <!-- Loading Progress Indicator -->
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Empty State View -->
+    <LinearLayout
+        android:id="@+id/emptyStateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/spacing_large"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textEmptyStateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_messages_title"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/text_secondary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <TextView
+            android:id="@+id/textEmptyStateMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_messages_message"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/text_secondary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Input Area Container -->
+    <LinearLayout
+        android:id="@+id/inputAreaContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:padding="@dimen/input_area_padding"
+        android:layout_marginStart="@dimen/input_margin_horizontal"
+        android:layout_marginEnd="@dimen/input_margin_horizontal"
+        android:layout_marginBottom="@dimen/input_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Calendar Button for Reminders -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCalendar"
+            style="@style/CalendarButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:contentDescription="@string/calendar_button_desc"
+            app:icon="@drawable/ic_calendar"
+            app:iconGravity="textStart" />
+
+        <!-- Message Input Field -->
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/message_hint"
+            android:background="@drawable/input_background"
+            android:padding="@dimen/input_padding_horizontal"
+            android:textSize="@dimen/input_text_size"
+            android:textColor="@color/input_text"
+            android:textColorHint="@color/input_hint"
+            android:maxLines="3"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollbars="vertical"
+            android:imeOptions="actionSend"
+            android:importantForAutofill="no" />
+
+        <!-- Send Message Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSend"
+            style="@style/SendButton"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_marginStart="@dimen/button_margin"
+            android:contentDescription="@string/send_button_desc"
+            app:icon="@drawable/ic_send"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+
+    <!-- Permission Status Banner (shown when permissions are missing) -->
+    <LinearLayout
+        android:id="@+id/permissionBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/warning"
+        android:padding="@dimen/spacing_medium"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textPermissionStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Se necesitan permisos para recordatorios"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_size_medium" />
+
+        <Button
+            android:id="@+id/buttonRequestPermissions"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habilitar"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Error Message SnackBar Area (used programmatically) -->
+    <FrameLayout
+        android:id="@+id/snackBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/inputAreaContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
