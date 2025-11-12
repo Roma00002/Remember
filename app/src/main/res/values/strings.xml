@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Information -->
+    <string name="app_name">Remember</string>
+    <string name="app_description">Chat con Recordatorios</string>
+
+    <!-- Chat Interface -->
+    <string name="message_hint">Escribe un mensaje…</string>
+    <string name="send_message">Enviar mensaje</string>
+    <string name="schedule_reminder">Programar recordatorio</string>
+    <string name="calendar_button_desc">Abrir calendario para recordatorio</string>
+    <string name="send_button_desc">Enviar mensaje</string>
+
+    <!-- Message Types -->
+    <string name="message_sent_tprefix">Tú</string>
+    <string name="message_received_prefix">Contacto</string>
+    <string name="reminder_prefix">📅 Recordatorio</string>
+    <string name="reminder_scheduled_for">Programado para %s</string>
+
+    <!-- Reminder Dialog -->
+    <string name="schedule_reminder_title">Programar Recordatorio</string>
+    <string name="reminder_message_hint">¿Qué quieres recordar?</string>
+    <string name="select_date">Seleccionar fecha</string>
+    <string name="select_time">Seleccionar hora</string>
+    <string name="cancel">Cancelar</string>
+    <string name="schedule">Programar</string>
+    <string name="reminder_scheduled">Recordatorio programado</string>
+    <string name="reminder_scheduled_success">Recordatorio programado para %s</string>
+
+    <!-- Date and Time -->
+    <string name="today">Hoy</string>
+    <string name="tomorrow">Mañana</string>
+    <string name="yesterday">Ayer</string>
+    <string name="date_format">dd/MM/yyyy</string>
+    <string name="time_format">HH:mm</string>
+    <string name="datetime_format">dd/MM/yyyy HH:mm</string>
+
+    <!-- Time Ago -->
+    <string name="just_now">Ahora</string>
+    <string name="minutes_ago">hace %d min</string>
+    <string name="hours_ago">hace %d h</string>
+    <string name="days_ago">hace %d días</string>
+    <string name="weeks_ago">hace %d semanas</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_reminders">Recordatorios</string>
+    <string name="notification_channel_description">Notificaciones para recordatorios programados</string>
+    <string name="reminder_notification_title">⏰ Recordatorio</string>
+    <string name="reminder_dismiss">Descartar</string>
+    <string name="reminder_snooze">Posponer</string>
+    <string name="reminder_snooze_5min">5 min</string>
+    <string name="reminder_snooze_15min">15 min</string>
+    <string name="reminder_snooze_1hour">1 hora</string>
+
+    <!-- Permissions -->
+    <string name="permission_notification_title">Permiso de Notificaciones</string>
+    <string name="permission_notification_message">Las notificaciones son necesarias para mostrarte recordatorios</string>
+    <string name="permission_exact_alarm_title">Permiso de Alarmas Exactas</string>
+    <string name="permission_exact_alarm_message">Se necesita este permiso para programar recordatorios precisos</string>
+    <string name="permission_denied">Permiso denegado</string>
+    <string name="permission_granted">Permiso concedido</string>
+    <string name="settings">Configuración</string>
+    <string name="open_settings">Abrir configuración</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_message">El mensaje no puede estar vacío</string>
+    <string name="error_message_too_long">El mensaje es demasiado largo</string>
+    <string name="error_past_reminder">El recordatorio debe programarse para el futuro</string>
+    <string name="error_saving_reminder">Error al guardar el recordatorio</string>
+    <string name="error_loading_messages">Error al cargar los mensajes</string>
+    <string name="error_network">Error de conexión</string>
+    <string name="error_unknown">Error desconocido</string>
+
+    <!-- Success Messages -->
+    <string name="message_sent">Mensaje enviado</string>
+    <string name="reminder_created">Recordatorio creado</string>
+    <string name="reminder_cancelled">Recordatorio cancelado</string>
+    <string name="reminder_updated">Recordatorio actualizado</string>
+
+    <!-- Actions -->
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="cancel_reminder">Cancelar recordatorio</string>
+    <string name="reschedule">Reprogramar</string>
+    <string name="dismiss">Descartar</string>
+    <string name="retry">Reintentar</string>
+    <string name="ok">Aceptar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_delete_message">¿Eliminar este mensaje?</string>
+    <string name="confirm_cancel_reminder">¿Cancelar este recordatorio?</string>
+    <string name="confirm_delete_all">¿Eliminar todos los mensajes?</string>
+
+    <!-- Empty States -->
+    <string name="empty_messages_title">Sin mensajes aún</string>
+    <string name="empty_messages_message">¡Envía tu primer mensaje o programa un recordatorio!</string>
+    <string name="empty_reminders_title">Sin recordatorios</string>
+    <string name="empty_reminders_message">Programa tu primer recordatorio usando el botón del calendario 📅</string>
+
+    <!-- Status Messages -->
+    <string name="loading">Cargando…</string>
+    <string name="sending">Enviando…</string>
+    <string name="saving">Guardando…</string>
+    <string name="done">Listo</string>
+    <string name="failed">Falló</string>
+
+    <!-- Menu Items -->
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_help">Ayuda</string>
+    <string name="menu_export">Exportar chat</string>
+    <string name="menu_clear_chat">Limpiar chat</string>
+
+    <!-- About -->
+    <string name="about_title">Acerca de Remember</string>
+    <string name="about_description">Una aplicación de chat con recordatorios integrados</string>
+    <string name="about_version">Versión 1.0.0</string>
+
+    <!-- Help -->
+    <string name="help_title">Ayuda</string>
+    <string name="help_content">
+        • Escribe mensajes como en cualquier chat\n
+        • Usa el botón 📅 para programar recordatorios\n
+        • Los recordatorios aparecen como mensajes especiales\n
+        • Recibirás notificaciones cuando llegue la hora\n
+        • Puedes posponer recordatorios desde las notificaciones
+    </string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_message">Mensaje de chat</string>
+    <string name="accessibility_reminder">Recordatorio programado</string>
+    <string name="accessibility_send_button">Botón de enviar</string>
+    <string name="accessibility_calendar_button">Botón de calendario para recordatorios</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_app_icon">Icono de la aplicación Remember</string>
+    <string name="cd_chat_background">Fondo del chat</string>
+    <string name="cd_message_bubble">Burbuja de mensaje</string>
+    <string name="cd_timestamp">Marca de tiempo</string>
+    <string name="cd_status_icon">Icono de estado</string>
+
+    <!-- Debug and Development -->
+    <string name="debug_mode">Modo Debug</string>
+    <string name="test_notification">Probar notificación</string>
+    <string name="database_info">Información de la base de datos</string>
+    <string name="permission_status">Estado de permisos</string>
+</resources>
