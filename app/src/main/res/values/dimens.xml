@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_extra_large">24dp</dimen>
+    <dimen name="spacing_huge">32dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_extra_large">24dp</dimen>
+
+    <!-- Message Layout -->
+    <dimen name="message_margin_horizontal">8dp</dimen>
+    <dimen name="message_margin_vertical">4dp</dimen>
+    <dimen name="message_corner_radius">10dp</dimen>
+    <dimen name="message_max_width">280dp</dimen>
+    <dimen name="message_padding_horizontal">12dp</dimen>
+    <dimen name="message_padding_vertical">8dp</dimen>
+    <dimen name="message_spacing">8dp</dimen>
+
+    <!-- Message Timestamp -->
+    <dimen name="timestamp_margin_top">4dp</dimen>
+    <dimen name="timestamp_text_size">11sp</dimen>
+
+    <!-- Input Area -->
+    <dimen name="input_area_height">56dp</dimen>
+    <dimen name="input_area_padding">8dp</dimen>
+    <dimen name="input_corner_radius">20dp</dimen>
+    <dimen name="input_text_size">16sp</dimen>
+    <dimen name="input_padding_horizontal">16dp</dimen>
+    <dimen name="input_padding_vertical">8dp</dimen>
+    <dimen name="input_margin_horizontal">8dp</dimen>
+    <dimen name="input_margin_bottom">8dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_size">45dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="button_corner_radius">22.5dp</dimen>
+    <dimen name="button_elevation">4dp</dimen>
+    <dimen name="button_icon_size">24dp</dimen>
+
+    <!-- Chat List -->
+    <dimen name="chat_item_height">72dp</dimen>
+    <dimen name="chat_item_padding">16dp</dimen>
+    <dimen name="chat_avatar_size">48dp</dimen>
+
+    <!-- Reminder Dialog -->
+    <dimen name="dialog_corner_radius">15dp</dimen>
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="dialog_margin">24dp</dimen>
+    <dimen name="dialog_title_text_size">20sp</dimen>
+    <dimen name="dialog_subtitle_text_size">16sp</dimen>
+
+    <!-- Card and Elevation -->
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <!-- Status Bar -->
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <!-- List Items -->
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="list_item_icon_size">24dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_size_tiny">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_regular">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="text_size_headline">28sp</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="divider_margin">16dp</dimen>
+
+    <!-- Progress Indicators -->
+    <dimen name="progress_size">24dp</dimen>
+    <dimen name="progress_large_size">48dp</dimen>
+
+    <!-- Avatar and Profile -->
+    <dimen name="avatar_size_small">32dp</dimen>
+    <dimen name="avatar_size_medium">48dp</dimen>
+    <dimen name="avatar_size_large">64dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="icon_size_tiny">16dp</dimen>
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_extra_large">48dp</dimen>
+
+    <!-- Floating Action Button -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Bottom Sheet -->
+    <dimen name="bottom_sheet_corner_radius">16dp</dimen>
+    <dimen name="bottom_sheet_padding">24dp</dimen>
+
+    <!-- Animation -->
+    <dimen name="animation_offset">16dp</dimen>
+
+    <!-- Minimum Touch Target -->
+    <dimen name="min_touch_target">48dp</dimen>
+
+    <!-- Custom Values for Remember App -->
+    <dimen name="chat_background_pattern_size">64dp</dimen>
+    <dimen name="message_bubble_tail_width">8dp</dimen>
+    <dimen name="message_bubble_tail_height">8dp</dimen>
+    <dimen name="reminder_badge_size">16dp</dimen>
+    <dimen name="reminder_badge_margin">4dp</dimen>
+</resources>
