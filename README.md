@@ -7,7 +7,6 @@
 *   **Diseño Minimalista**: Una estética limpia en tonos púrpura oscuro, centrada en la simplicidad.
 *   **Alarmas Inteligentes**: Configura alarmas que despiertan tu dispositivo para asegurar que no te pierdas nada importante.
 *   **Calendario Integrado**: Gestiona tu agenda con una vista de calendario intuitiva.
-*   **Firma Personalizada**: Incluye la firma distintiva "Remember / Roma".
 *   **Open Source**: Código totalmente abierto bajo la licencia GPLv3.
 
 ## 📥 Descarga Directa
