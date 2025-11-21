@@ -4,12 +4,17 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/Roma00002/Remember
 IssueTracker: https://github.com/Roma00002/Remember/issues
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-Changelog: https://github.com/Roma00002/Remember/releases
 
 RepoType: git
 Repo: https://github.com/Roma00002/Remember.git
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: tags
+UpdateCheckName: Remember
+Changelog: https://github.com/Roma00002/Remember/releases
+
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
 
 Name: Remember
 Summary: Minimalist reminder and alarm app
