@@ -1,0 +1,23 @@
+Categories:
+  - Time
+  - Productivity
+License: GPL-3.0-only
+SourceCode: https://github.com/Roma00002/Remember
+IssueTracker: https://github.com/Roma00002/Remember/issues
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+Changelog: https://github.com/Roma00002/Remember/releases
+
+RepoType: git
+Repo: https://github.com/Roma00002/Remember.git
+
+Name: Remember
+Summary: Minimalist reminder and alarm app
+Description: |
+    Remember is a minimalist and elegant reminder and alarm application designed to help you organize your day without distractions.
+
+    Features:
+    * Minimalist Design: Clean aesthetic in dark purple tones.
+    * Smart Alarms: Full-screen alarms to ensure you don't miss anything.
+    * Integrated Calendar: Manage your schedule intuitively.
+    * Open Source: Fully open source under GPLv3.
