@@ -4,14 +4,20 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/Roma00002/Remember
 IssueTracker: https://github.com/Roma00002/Remember/issues
-
 RepoType: git
 Repo: https://github.com/Roma00002/Remember.git
-
 AutoUpdateMode: Version v%v
 UpdateCheckMode: tags
-UpdateCheckName: Remember
 Changelog: https://github.com/Roma00002/Remember/releases
+UpdateCheckName: Remember
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
 
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
